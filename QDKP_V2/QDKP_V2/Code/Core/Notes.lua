@@ -48,9 +48,9 @@ function QDKP2_MakeNote(incNet, incTotal, incSpent, incHours)
   incHours=RoundNum(incHours*10)/10
 
   local out=''
-  local netLabel='Net'
-  local optLabel, optValue='Tot', incTotal
-  local hrsLabel='Hrs'
+  local netLabel='当前分'
+  local optLabel, optValue='总分', incTotal
+  local hrsLabel='出勤时间'
   if QDKP2_TotalOrSpent==2 then
     optLabel = 'Spt'
     optValue = incSpent
